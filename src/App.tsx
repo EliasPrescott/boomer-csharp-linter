@@ -73,7 +73,7 @@ function App() {
   async function loadParser() {
     await Parser.init();
     const parser = new Parser()
-    const csharp = await Parser.Language.load('/tree-sitter-c_sharp.wasm')
+    const csharp = await Parser.Language.load(import.meta.env.BASE_URL + 'tree-sitter-c_sharp.wasm')
     parser.setLanguage(csharp)
     parserRef.current = parser
     setParserLoaded(true)
