@@ -131,9 +131,14 @@ function App() {
       <p>
         Thanks to the Boomer C# Linter, you can write C# just like in the good old days. By utilizing a classic subset of the C# language, you can keep your team's code quality high while minimizing confusing syntax.
       </p>
+      <p>
+        Have an idea for how to improve the linter? Submit any new lint rule ideas to the <a href="https://github.com/EliasPrescott/boomer-csharp-linter/issues/new">GitHub Repo</a>.
+      </p>
       <sub>
         This tool is purely satirical. Any resemblance to code or code reviews, living or dead, is coincidental.
       </sub>
+
+      <h3>Hover over the highlighted text and start editing the code to see the warnings in action.</h3>
       <div className="center">
         <Editor editor={editor} setEditor={setEditor} />
       </div>
